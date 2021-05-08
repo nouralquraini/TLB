@@ -97,19 +97,19 @@ if (!page_table)
 
 int get_available_frame(unsigned page) {    // TODO
   // empty queue
-  if (int isEmpty(page_queue))
+  if (isEmpty(page_queue))
 {
-	return (top == -1);
+    printf("queue is empty");
 }
 
   // queue not full
-if (int !isFull(page_queue))
+if (!isFull(page_queue))
 {
   printf("queue is not full");
 }
   
   // queue full
-   if (int isFull(page_queue))
+   if (isFull(page_queue))
    {
      printf("Full queue");
    }
